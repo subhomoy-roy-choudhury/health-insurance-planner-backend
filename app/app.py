@@ -7,7 +7,7 @@ from app.routes.plan_routes import plan_bp
 app = Flask(__name__)
 
 # API Routes
-app.register_blueprint(plan_bp, url_prefix='/api/plan')
+app.register_blueprint(plan_bp, url_prefix="/api/plan")
 
 # Commands
 app.register_blueprint(initdb_bp, cli_group=None)
